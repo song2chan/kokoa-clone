@@ -16,7 +16,7 @@
   opacity: 70%;
 }
 
-/* 만약 login-form을 BEM(Block-Element__Modifier)으로 작성한다면
+/* 만약 login-form을 BEM(Block__Element--Modifier)으로 작성한다면
 .login-form__input {
 }
 

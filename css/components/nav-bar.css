@@ -1,0 +1,48 @@
+.nav-bar {
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+
+  position: fixed;
+  /* paading이 너무 커서 ellipsis가 화면 밖으로
+  사라지는 현상이 발생하는 걸 고쳐주는 매직코드 
+  원리는 100%의 width에 더해지는 padding
+  값을 신경쓰지않고 content box의 크기를
+  그대로 둬서 의도한 만큼의 width가 되게 함*/
+  box-sizing: border-box;
+
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav-bar__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav-bar__notification {
+  background-color: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: 600;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.small-notification {
+  width: 6px;
+  height: 6px;
+  bottom: 30px;
+  left: 30px;
+}
