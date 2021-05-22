@@ -5,12 +5,16 @@
 /* Components  */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 /* Affect all the screens */
 body {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
+  color: #2e363e;
 }

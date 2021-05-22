@@ -21,7 +21,6 @@
 }
 
 .nav-bar__link {
-  color: #2e363e;
   position: relative;
 }
 
@@ -31,16 +30,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   font-weight: 600;
   position: absolute;
+}
+
+.nav-bar__notification--big {
+  width: 30px;
+  height: 30px;
   bottom: 15px;
   left: 15px;
 }
 
-.small-notification {
+.nav-bar__notification--small {
   width: 6px;
   height: 6px;
   bottom: 30px;
