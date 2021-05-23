@@ -8,6 +8,10 @@
   font-weight: 600;
 }
 
+.badge:not(.badge--not-absolute) {
+  position: absolute;
+}
+
 .badge--big {
   width: 30px;
   height: 30px;

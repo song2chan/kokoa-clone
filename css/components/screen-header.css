@@ -11,6 +11,18 @@
   font-weight: 800;
 }
 
+.screen-header__icons {
+  display: flex;
+}
+
+.screen-header__icons--badged {
+  position: relative;
+}
+
+.screen-header__icons--badged > span {
+  bottom: 18px;
+}
+
 .screen-header__icons span {
   margin-left: 25px;
 }
