@@ -1,0 +1,40 @@
+.settings-list__item {
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-list__item i {
+  opacity: 0.9;
+  width: 15px;
+  margin-right: 15px;
+  width: 30px;
+  text-align: center;
+}
+
+.settings-list__column:last-child:nth-child(2),
+.settings-list__column:last-child:nth-child(3) {
+  color: var(--gray);
+}
+
+.settings-list .divider {
+  margin: 20px 0px;
+  width: 100%;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.settings-list__column {
+  display: flex;
+  align-items: center;
+}
+
+.settings-list__column span {
+  margin-right: 10px;
+}
+
+.settings-list__column > .badge {
+  font-size: 5px;
+}

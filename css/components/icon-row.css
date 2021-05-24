@@ -33,8 +33,3 @@
   height: 50px;
   border-radius: 20%;
 }
-
-/* icon-row아래 icon-row__icon이 여러개있는데
-icon-row__icon의 첫번째 자식을 기준으로
-마지막 자식부터  n번째 위치에 있는 자식이 첫번째
-자식이랑 일치하면 코드가 실행됨.*/
