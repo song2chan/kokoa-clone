@@ -19,7 +19,6 @@
 .friends-screen__channel {
   border-top: var(--border-line);
   padding-top: 15px;
-  margin-top: 25px;
 }
 
 .friends-screen__channel-header {

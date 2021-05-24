@@ -1,0 +1,40 @@
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 150px));
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-row__icon i {
+  font-size: 40px;
+}
+
+.icon-row__icon span,
+.icon-row__img span {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.icon-row__img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.icon-row__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+
+/* icon-row아래 icon-row__icon이 여러개있는데
+icon-row__icon의 첫번째 자식을 기준으로
+마지막 자식부터  n번째 위치에 있는 자식이 첫번째
+자식이랑 일치하면 코드가 실행됨.*/
