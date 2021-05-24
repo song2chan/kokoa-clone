@@ -2,6 +2,7 @@
   padding: 40px var(--horizontal-space);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .alt-header__title {
@@ -9,10 +10,43 @@
   font-weight: 600;
 }
 
+/* 
+position: absolute를 이용해서 중앙 정렬하는 방법
+.alt-header {
+  flex-direction: column;
+}
+
+.alt-header__column:first-child,
+.alt-header__column:last-child {
+  position: absolute;
+}
+
 .alt-header__column:first-child {
-  margin-right: auto;
+  align-self: flex-start;
+}
+
+.alt-header__column:nth-child(2) {
+  max-width: 50%;
 }
 
 .alt-header__column:last-child {
-  margin-left: auto;
+  align-self: flex-end;
+} 
+*/
+
+.alt-header__column:last-child span > i {
+  margin-left: 15px;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column {
+  width: 33%;
 }
