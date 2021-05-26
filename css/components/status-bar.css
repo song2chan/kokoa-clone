@@ -15,6 +15,7 @@
   background-color: skyblue;
   color: white;
   z-index: 9999;
+  top: 0;
 }
 
 .status-bar__column {
