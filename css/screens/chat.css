@@ -28,19 +28,135 @@
   border-radius: 20px;
   position: absolute;
   top: 120px;
-  z-index: -1;
+}
+
+.message-row:nth-child(2) {
+  margin-top: 200px;
 }
 
 .message-row {
-  margin-top: 200px;
-  align-self: flex-start;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .message-row img {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   border-radius: 45%;
-  margin-right: 10px;
+  margin-right: 7px;
+}
+
+.message__author {
+  opacity: 0.8;
+  font-size: 15px;
+  margin-bottom: 7px;
+  display: block;
+  padding-top: 15px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  border-radius: 13px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: yellow;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+/* .message-row--own .message__bubble {
+  only works flex children 
+  order: 1;
+}
+
+.message-row--own .message__time {
+  order: 0;
+} */
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+}
+
+.reply__column {
+  position: relative;
+}
+
+.reply__column input {
+  padding: 10px;
+  border-radius: 25px;
+  width: 100%;
+  border: var(--border-line);
+  box-sizing: border-box;
+  background-color: #e9eef2;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 4px;
+}
+
+.reply__column:last-child > i {
+  right: 45px;
+  top: 12px;
+}
+
+.reply__column:last-child button {
+  border-radius: 50%;
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active {
+  outline: none;
+}
+
+.reply__column i:not(button > i) {
+  opacity: 0.5;
 }
