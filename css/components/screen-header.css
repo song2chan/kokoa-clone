@@ -11,8 +11,21 @@
   font-weight: 800;
 }
 
+@keyframes iconSpinAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .screen-header__icons {
   display: flex;
+}
+
+.screen-header__icons i:hover {
+  animation: iconSpinAnimation 2s linear infinite;
 }
 
 .screen-header__icons--badged {
